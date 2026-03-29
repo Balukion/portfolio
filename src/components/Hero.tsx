@@ -1,4 +1,4 @@
-import { Github, Mail, ArrowDown } from 'lucide-react';
+import { Github, Mail, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -10,7 +10,8 @@ export default function Hero() {
       <div
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle, rgba(34,211,238,0.08) 0%, transparent 70%)',
+          background:
+            "radial-gradient(circle, rgba(34,211,238,0.08) 0%, transparent 70%)",
         }}
       />
 
@@ -25,7 +26,8 @@ export default function Hero() {
           Full-Stack Developer
         </p>
         <p className="text-slate-500 text-base md:text-lg max-w-lg mx-auto mb-10 leading-relaxed">
-          I build mobile and web applications — from event management systems and offline-first apps to AI-powered automation tools.
+          I build mobile and web applications — from event management systems
+          and offline-first apps to AI-powered automation tools.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -54,7 +56,7 @@ export default function Hero() {
             <Github size={22} />
           </a>
           <a
-            href="mailto:balukion@gmail.com"
+            href="mailto:guga.magu@gmail.com"
             className="text-slate-500 hover:text-cyan-400 transition-colors"
             aria-label="Email"
           >

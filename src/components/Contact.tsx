@@ -1,4 +1,4 @@
-import { Mail, Github } from 'lucide-react';
+import { Mail, Github } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -11,16 +11,17 @@ export default function Contact() {
           Let's work together
         </h2>
         <p className="text-slate-400 text-base leading-relaxed mb-10">
-          Have a project in mind or want to collaborate? I'm open to freelance work and full-time opportunities. Drop me a message.
+          Have a project in mind or want to collaborate? I'm open to freelance
+          work and full-time opportunities. Drop me a message.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:balukion@gmail.com"
+            href="mailto:guga.magu@gmail.com"
             className="flex items-center gap-2 justify-center px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors text-sm"
           >
             <Mail size={16} />
-            balukion@gmail.com
+            guga.magu@gmail.com
           </a>
           <a
             href="https://github.com/Balukion"
