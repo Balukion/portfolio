@@ -9,6 +9,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'FlowManager',
+    description:
+      'Collaborative task management system with a Workspace → Project → Task → Step hierarchy and three role levels. Full-stack monorepo with a Next.js frontend, Fastify REST API, JWT auth, cursor-based pagination, soft delete, activity logs, background jobs, and AWS S3 image uploads. Built with TDD across 111 user stories.',
+    tags: ['Next.js', 'Fastify', 'TypeScript', 'PostgreSQL', 'Prisma', 'Turborepo', 'TanStack Query', 'AWS S3'],
+    github: 'https://github.com/Balukion/FlowManager',
+    featured: true,
+  },
+  {
     title: 'UberTrance Driver',
     description:
       'Offline-first mobile app for bus drivers managing ticket sales and passenger boarding at electronic music events. Features a 30-seat bus layout, QR scanning with Ed25519 signature verification, boarding queues, and automatic sync when connectivity returns.',
