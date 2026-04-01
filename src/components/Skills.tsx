@@ -28,15 +28,21 @@ const categoryColors: Record<string, string> = {
   AI: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
 };
 
+import { useLang } from '../contexts/LanguageContext';
+import { translations } from '../i18n/translations';
+
 export default function Skills() {
+  const { lang } = useLang();
+  const t = translations[lang].skills;
+
   return (
     <section id="skills" className="py-24 px-6 bg-white/[0.02]">
       <div className="max-w-3xl mx-auto">
         <p className="text-cyan-400 text-sm font-medium tracking-widest uppercase mb-3">
-          Skills
+          {t.label}
         </p>
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-10">
-          Tech stack
+          {t.heading}
         </h2>
 
         <div className="flex flex-wrap gap-3">

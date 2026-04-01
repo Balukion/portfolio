@@ -1,6 +1,11 @@
 import { Github, Mail, ArrowDown } from "lucide-react";
+import { useLang } from '../contexts/LanguageContext';
+import { translations } from '../i18n/translations';
 
 export default function Hero() {
+  const { lang } = useLang();
+  const t = translations[lang].hero;
+
   return (
     <section
       id="hero"
@@ -17,17 +22,16 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-2xl">
         <p className="text-cyan-400 text-sm font-medium tracking-widest uppercase mb-4">
-          Hello, I'm
+          {t.greeting}
         </p>
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
-          Balukion
+          {t.title}
         </h1>
         <p className="text-xl md:text-2xl text-slate-400 mb-6 font-light">
-          Full-Stack Developer
+          {t.subtitle}
         </p>
         <p className="text-slate-500 text-base md:text-lg max-w-lg mx-auto mb-10 leading-relaxed">
-          I build mobile and web applications — from event management systems
-          and offline-first apps to AI-powered automation tools.
+          {t.tagline}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -35,13 +39,13 @@ export default function Hero() {
             href="#projects"
             className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors text-sm"
           >
-            View Projects
+            {t.cta1}
           </a>
           <a
             href="#contact"
             className="px-6 py-3 border border-white/10 hover:border-cyan-400/40 text-slate-300 hover:text-white rounded-lg transition-colors text-sm"
           >
-            Get in Touch
+            {t.cta2}
           </a>
         </div>
 
@@ -56,7 +60,7 @@ export default function Hero() {
             <Github size={22} />
           </a>
           <a
-            href="mailto:guga.magu@gmail.com"
+            href="mailto:balukion@gmail.com"
             className="text-slate-500 hover:text-cyan-400 transition-colors"
             aria-label="Email"
           >
