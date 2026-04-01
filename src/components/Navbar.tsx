@@ -50,7 +50,7 @@ export default function Navbar() {
           </ul>
           <button
             onClick={toggle}
-            className="text-xs font-semibold px-2.5 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-400/40 hover:text-cyan-400 transition-colors tracking-wide"
+            className="cursor-pointer text-xs font-semibold px-2.5 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-400/40 hover:text-cyan-400 transition-colors tracking-wide"
             aria-label="Toggle language"
           >
             {lang === 'en' ? 'PT' : 'EN'}
@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="md:hidden flex items-center gap-3">
           <button
             onClick={toggle}
-            className="text-xs font-semibold px-2.5 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-400/40 hover:text-cyan-400 transition-colors tracking-wide"
+            className="cursor-pointer text-xs font-semibold px-2.5 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-400/40 hover:text-cyan-400 transition-colors tracking-wide"
             aria-label="Toggle language"
           >
             {lang === 'en' ? 'PT' : 'EN'}
