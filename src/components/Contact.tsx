@@ -21,11 +21,11 @@ export default function Contact() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:balukion@gmail.com"
+            href="mailto:guga.magu@gmail.com"
             className="flex items-center gap-2 justify-center px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors text-sm"
           >
             <Mail size={16} />
-            balukion@gmail.com
+            guga.magu@gmail.com
           </a>
           <a
             href="https://github.com/Balukion"

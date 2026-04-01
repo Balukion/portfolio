@@ -10,7 +10,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hello, I'm",
-      title: 'Balukion',
+      title: 'Gustavo',
       subtitle: 'Full-Stack Developer',
       tagline:
         'I build mobile and web applications — from event management systems and offline-first apps to AI-powered automation tools.',
@@ -54,7 +54,7 @@ export const translations = {
     },
     hero: {
       greeting: 'Olá, me chamo',
-      title: 'Balukion',
+      title: 'Gustavo',
       subtitle: 'Desenvolvedor Full-Stack',
       tagline:
         'Desenvolvo aplicações mobile e web — de sistemas de gestão de eventos e apps offline-first até ferramentas de automação com IA.',

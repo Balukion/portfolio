@@ -60,7 +60,7 @@ export default function Hero() {
             <Github size={22} />
           </a>
           <a
-            href="mailto:balukion@gmail.com"
+            href="mailto:guga.magu@gmail.com"
             className="text-slate-500 hover:text-cyan-400 transition-colors"
             aria-label="Email"
           >
