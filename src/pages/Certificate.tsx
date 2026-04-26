@@ -22,7 +22,7 @@ const labels = {
 };
 
 export default function Certificate() {
-  const { lang } = useLang();
+  const { lang, toggle } = useLang();
   const t = labels[lang];
   const pdfFile = lang === 'en' ? '/kenzie-certificate-en.pdf' : '/kenzie-certificate-pt.pdf';
 
@@ -38,14 +38,23 @@ export default function Certificate() {
           {t.back}
         </Link>
 
-        <a
-          href={pdfFile}
-          download
-          className="flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors text-sm"
-        >
-          <Download size={15} />
-          {t.download}
-        </a>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={toggle}
+            className="cursor-pointer text-xs font-semibold px-2.5 py-1 rounded border border-white/10 text-slate-400 hover:border-cyan-400/40 hover:text-cyan-400 transition-colors tracking-wide"
+            aria-label="Toggle language"
+          >
+            {lang === 'en' ? 'PT' : 'EN'}
+          </button>
+          <a
+            href={pdfFile}
+            download
+            className="flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors text-sm"
+          >
+            <Download size={15} />
+            {t.download}
+          </a>
+        </div>
       </header>
 
       {/* Content */}
