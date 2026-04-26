@@ -24,6 +24,7 @@ const labels = {
 export default function Certificate() {
   const { lang } = useLang();
   const t = labels[lang];
+  const pdfFile = lang === 'en' ? '/kenzie-certificate-en.pdf' : '/kenzie-certificate-pt.pdf';
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-slate-300 flex flex-col">
@@ -38,7 +39,7 @@ export default function Certificate() {
         </Link>
 
         <a
-          href="/kenzie-certificate.pdf"
+          href={pdfFile}
           download
           className="flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold rounded-lg transition-colors text-sm"
         >
@@ -59,10 +60,11 @@ export default function Certificate() {
           <p className="text-slate-500 text-sm mt-2">{t.issuer}</p>
         </div>
 
-        {/* PDF viewer */}
+        {/* PDF viewer — swaps automatically with language */}
         <div className="w-full flex-1 rounded-xl overflow-hidden border border-white/8 bg-white/[0.02]" style={{ minHeight: '75vh' }}>
           <object
-            data="/kenzie-certificate.pdf"
+            key={pdfFile}
+            data={pdfFile}
             type="application/pdf"
             className="w-full h-full"
             style={{ minHeight: '75vh' }}
@@ -70,7 +72,7 @@ export default function Certificate() {
             <div className="flex flex-col items-center justify-center h-full py-20 gap-4 text-slate-400">
               <p>{t.fallback}</p>
               <a
-                href="/kenzie-certificate.pdf"
+                href={pdfFile}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cyan-400 hover:underline text-sm"
