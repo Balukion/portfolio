@@ -6,6 +6,7 @@ export const translations = {
       about: 'About',
       skills: 'Skills',
       projects: 'Projects',
+      certifications: 'Certifications',
       contact: 'Contact',
     },
     hero: {
@@ -50,6 +51,7 @@ export const translations = {
       about: 'Sobre',
       skills: 'Habilidades',
       projects: 'Projetos',
+      certifications: 'Certificações',
       contact: 'Contato',
     },
     hero: {
